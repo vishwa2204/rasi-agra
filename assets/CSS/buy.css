@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*     font-family: 'Jost', sans-serif;     */
+
+/* display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0 !important;
+    overflow: hidden; */
+
+
+:root {
+    --color: #120f3e;
+    --c2: #fb9d25;
+    --white: #fff;
+    --black: #171717;
+    --light: rgb(223, 245, 253);
+    --gray: rgb(188, 188, 188);
+    --l2: #eee;
+    --red: rgb(255, 38, 38);
+    --gr: rgb(14, 193, 46);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+}
+
+.buy-section{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.buy-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buy-form h3{
+    margin-bottom: 5%;
+    color: var(--color);
+    font-weight: 700;
+}
+
+.buy-form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-form form .form-box-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-form form .form-box-1 input{
+    width: 49%;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 3%;
+    border: 1px solid var(--black);
+}
+
+.buy-form form textarea{
+    padding: 1%;
+    border: 1px solid var(--black);
+    margin-bottom: 3%;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.buy-form form button{
+    padding: 2%;
+    background-color: var(--color);
+    color: var(--white);
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* new style */
+.cart-list-img img{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+.cart-buy{
+    height: auto !important;
+}
+.pro-list-name{
+    color: var(--color);
+    /* font-weight: 700; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 5% !important;
+    overflow: hidden;
+}
+.pro-list-box{
+    position: relative;
+}
+.del-x{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: var(--c2) !important;
+}
+
+
+@media screen and (max-width:767px) {
+  
+.buy-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.buy-form form .form-box-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buy-form form .form-box-1 input{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    background-color: var(--light);
+}
+
+.buy-form form button{
+    padding: 2%;
+    background-color: var(--color);
+    color: var(--white);
+    width: 50%;
+    margin-top: 5%;
+}
+
+}
+
+@media screen and (max-width:660px) {
+    .del-x{
+        top: 0%;
+        right: 5%;
+    }
+}

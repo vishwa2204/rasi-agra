@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*     font-family: 'Jost', sans-serif;     */
+
+/* display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0 !important;
+    overflow: hidden; */
+
+
+:root {
+    --color: #120f3e;
+    --c2: #fb9d25;
+    --white: #fff;
+    --black: #171717;
+    --light: rgb(223, 245, 253);
+    --gray: rgb(188, 188, 188);
+    --l2: #eee;
+    --red: rgb(255, 38, 38);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all 0.4s linear;
+}
+
+.navbar{
+    background-color: var(--white);
+    width: 100% !important;
+}
+
+/* Category section  */
+
+.category-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    position: relative;
+    padding: 2%;
+
+}
+
+.category-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.category-filter {
+    width: 30%;
+    height: auto;
+    top: 0;
+    background-color: var(--l2);
+    padding: 2%;
+    position: relative;
+}
+
+.filter-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../Images/PNG/4.png);
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.category-filter .category-close-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+
+.category-filter .category-close-container button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    color: var(--c2);
+    border-radius: 50%;
+    font-size: 30px;
+
+}
+
+
+
+.category-filter .category-details {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+}
+
+.category-filter .category-boxs{
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color);
+    margin-bottom: 5%;
+    padding: 10% 3%;
+    border-radius: 10px;
+}
+
+.category-filter .category-boxs h3{
+    margin-bottom: 5%;
+    border-bottom: 1px solid var(--color);
+    padding: 5% 0;
+    font-weight: 900;
+    color: var(--color);
+}
+
+.category-filter .category-boxs h5{
+    margin-bottom: 4%;
+    font-weight: 900;
+    color: var(--color);
+}
+
+.category-filter .category-boxs .category-name{
+    margin-bottom: 10%;
+}
+
+.category-filter .category-boxs .category-name input{
+    margin-bottom: 3%;
+    accent-color: var(--c2);
+}
+
+.category-filter .category-boxs .category-name label{
+    color: var(--black);
+    font-weight: 500;
+}
+
+.category-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.filter-btn-container{
+    display: none;
+    margin-bottom: 5%;
+}
+
+.filter-btn-container .filter-btn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color);
+    color: var(--c2);
+    border-radius: 50%;
+}
+
+
+.popular-product-boxsss {
+    width: 20%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 0.3px solid var(--l2);
+    border-radius: 20px;
+    margin-bottom: 3%;
+    position: relative;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.popular-product-boxsss .i-2 {
+    opacity: 0;
+}
+
+.popular-product-boxsss:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.popular-product-boxsss:hover .i-1 {
+    opacity: 0;
+}
+
+.popular-product-boxsss:hover .i-2 {
+    opacity: 1;
+}
+
+
+
+.category-content .popular-product-boxsss a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:991px) {
+    .category-filter {
+        width: 40%;
+        height: auto;
+        top: 0;
+        background-color: var(--l2);
+        padding: 2%;
+        position: absolute;
+        z-index: 6;
+        left: -100%;
+    }
+
+    .category-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .category-filter .category-close-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 3%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+    }
+    
+
+    .category-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+    .filter-active {
+        left: 0 ;
+        top: 0;
+    }
+
+    .filter-btn-container{
+        display: flex;
+        margin-bottom: 5%;
+
+    }
+    
+}
+
+
+@media screen and (max-width:320px) {
+    .category-content .popular-product-boxsss {
+        width: 100%;
+    }
+    
+    .category-filter {
+        width: 100%;
+        height: auto;
+        top: 0;
+        background-color: var(--l2);
+        padding: 2%;
+        position: absolute;
+        z-index: 6;
+        left: -100%;
+    }
+    .filter-active {
+        left: 0 ;
+        top: 0;
+    }
+
+    .filter-btn-container{
+        display: flex;
+        margin-bottom: 5%;
+
+    }
+    
+}
+
+
+
+@media screen and (min-width:321px) and (max-width:768px) {
+    .category-content .popular-product-boxsss {
+        width: 47%;
+    }
+
+    .category-filter {
+        width: 70%;
+        height: auto;
+        top: 0;
+        background-color: var(--l2);
+        padding: 2%;
+        position: absolute;
+        z-index: 6;
+        left: -100%;
+    }
+
+    .filter-active {
+        left: 0 ;
+        top: 0;
+    }
+
+    .filter-btn-container{
+        display: flex;
+        margin-bottom: 5%;
+
+    }
+    
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .category-content .popular-product-boxsss {
+        width: 30%;
+    }
+}
