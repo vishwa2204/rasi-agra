@@ -73,7 +73,7 @@ function whatsapp() {
         //   var encodedMessage = encodeURIComponent(formattedMessage);
 
         // Construct the WhatsApp URL
-        var url = "https://wa.me/+919342229700?text=" + formattedMessage;
+        var url = "https://wa.me/+918903642874?text=" + formattedMessage;
 
         // Open the WhatsApp URL in a new tab/window
         window.open(url, 'black');
