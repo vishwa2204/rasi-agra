@@ -2723,6 +2723,10 @@ footer {
     font-weight: 700;
     color: var(--color);
 }
+
+.category-title span{
+    color: var(--black);
+}
 .category-title::before{
     content: '';
     width: 100px;
