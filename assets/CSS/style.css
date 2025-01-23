@@ -2719,8 +2719,21 @@ footer {
 
 }
 
+.category-title{
+    font-weight: 700;
+    color: var(--color);
+}
+.category-title::before{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-
+}
 
 
 
